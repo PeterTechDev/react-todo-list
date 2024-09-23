@@ -1,0 +1,62 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--gray-700);
+  padding: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  height: 10rem;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.addTodoContainer {
+  position: absolute;
+  bottom: -1.5rem; /* Adjust this value to move input closer to the bottom of the header */
+  width: 100%;
+  max-width: 600px; /* Set a max width for the input field */
+}
+
+.logo {
+  width: 1.875rem; /* 30px */
+  margin-right: 0.625rem; /* 10px */
+  animation: spin 4s linear infinite; /* Applying the animation */
+}
+
+.title {
+  color: var(--blue-light);
+  font-size: 1.5rem; /* 24px */
+  font-weight: bold;
+}
+
+/* Keyframes for the spinning animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 1.5rem 2rem;
+  }
+
+  .logo {
+    width: 2.5rem; /* 40px */
+  }
+
+  .title {
+    font-size: 2rem; /* 32px */
+  }
+}

@@ -1,0 +1,76 @@
+:root {
+  /* Gray scale */
+  --gray-100: #f2f2f2;
+  --gray-200: #cccccc;
+  --gray-300: #a6a6a6;
+  --gray-400: #333333;
+  --gray-500: #262626;
+  --gray-600: #1a1a1a;
+  --gray-700: #0d0d0d;
+
+  /* Purple */
+  --purple: #9f7aea;
+  --purple-dark: #805ad5;
+
+  /* Blue */
+  --blue-light: #03a6c3;
+  --blue: #4299e1;
+  --blue-dark: #3182ce;
+
+  /* Danger */
+  --danger: #e53e3e;
+
+  /* Font sizes */
+  --font-size-base: 1rem; /* 16px */
+  --font-size-lg: 1.25rem; /* 20px */
+  --font-size-sm: 0.875rem; /* 14px */
+
+  /* Font family */
+  --font-base: "Inter", sans-serif;
+
+  font-size: 16px; /* Base font size for rem units */
+}
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Lists */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Buttons */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: var(--blue-dark); /* Utilizando a variável de cor */
+}
+
+a:hover {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+body {
+  font-family: var(--font-base); /* Definindo a fonte base */
+  padding-top: 5rem; /* Ajusta esse valor de acordo com a altura real do header */
+  margin: 0;
+  box-sizing: border-box;
+}

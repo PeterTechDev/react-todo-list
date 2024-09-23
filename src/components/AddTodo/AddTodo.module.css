@@ -1,0 +1,34 @@
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  flex: 1;
+  padding: 0.75rem; /* Spacing inside the input */
+  font-size: 1rem; /* Ensure input text is legible */
+  border: 1px solid var(--gray-300);
+  margin-right: 0.5rem; /* Space between the input and button */
+  outline: none;
+  border-radius: 0.5rem;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  border-color: var(--blue); /* Change border color on focus */
+}
+
+.button {
+  padding: 0.75rem 1.5rem; /* Spacing for the button */
+  background-color: var(--blue-dark);
+  color: var(--gray-100);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--blue); /* Lighter blue on hover */
+}

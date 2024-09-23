@@ -1,6 +1,9 @@
 .form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  gap: 1rem; /* Spacing between elements */
+  margin: 0 1rem;
 }
 
 .input {
@@ -8,10 +11,10 @@
   padding: 0.75rem; /* Spacing inside the input */
   font-size: 1rem; /* Ensure input text is legible */
   border: 1px solid var(--gray-300);
-  margin-right: 0.5rem; /* Space between the input and button */
   outline: none;
   border-radius: 0.5rem;
   transition: border-color 0.3s ease;
+  text-align: center;
 }
 
 .input:focus {
@@ -31,4 +34,19 @@
 
 .button:hover {
   background-color: var(--blue); /* Lighter blue on hover */
+}
+
+@media (min-width: 640px) {
+  .form {
+    max-width: 600px; /* Limit the width of the form */
+    flex-direction: row;
+  }
+
+  .input {
+    font-size: 1.25rem; /* Increase font size for larger screens */
+  }
+
+  .button {
+    font-size: 1.25rem; /* Increase font size for larger screens */
+  }
 }

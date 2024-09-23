@@ -11,6 +11,7 @@
   z-index: 1000;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
   height: 10rem;
+  padding-bottom: 3rem;
 }
 
 .logoContainer {
@@ -20,7 +21,7 @@
 
 .addTodoContainer {
   position: absolute;
-  bottom: -1.5rem; /* Adjust this value to move input closer to the bottom of the header */
+  bottom: -3rem; /* Adjust this value to move input closer to the bottom of the header */
   width: 100%;
   max-width: 600px; /* Set a max width for the input field */
 }
@@ -33,7 +34,7 @@
 
 .title {
   color: var(--blue-light);
-  font-size: 1.5rem; /* 24px */
+  font-size: 2rem; /* 32px */
   font-weight: bold;
 }
 
@@ -48,6 +49,10 @@
 }
 
 @media (min-width: 768px) {
+  .addTodoContainer {
+    bottom: -1.6rem; /* Adjust this value to move input closer to the bottom of the header */
+  }
+
   .header {
     padding: 1.5rem 2rem;
   }

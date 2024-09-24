@@ -2,27 +2,34 @@ import React, { useState } from "react";
 import styles from "./AddTodo.module.css";
 
 interface AddTodoProps {
-  onAddTodo: (taskText: string) => void; // Function passed via props to handle adding tasks
+  onAddTodo: (taskText: string) => void;
 }
 
-const AddTodo: React.FC<AddTodoProps> = ({ onAddTodo }) => {
-  const [taskText, setTaskText] = useState(""); // Local state to manage the input
+export function AddTodo({ onAddTodo }: AddTodoProps) {
+  const [taskText, setNewTask] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault(); // Prevent the page from reloading
+  const handleSubmitNewTask = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!taskText) {
+      alert("Please enter a task");
+      return;
+    } // Prevent empty tasks from being added
+
     if (taskText.trim()) {
-      onAddTodo(taskText); // Call the parent function to add the task
-      setTaskText(""); // Clear the input field after adding
+      onAddTodo(taskText);
+      setNewTask("");
     }
+
+    alert("New Task: " + taskText); // Placeholder for adding tasks logic
   };
 
   return (
-    <form onSubmit={handleSubmit} className={styles.form}>
+    <form onSubmit={handleSubmitNewTask} className={styles.form}>
       <input
         className={styles.input}
         type="text"
         value={taskText}
-        onChange={(e) => setTaskText(e.target.value)} // Update state with the input value
+        onChange={(e) => setNewTask(e.target.value)} // Update state with the input value
         placeholder="Add a new task"
       />
       <button className={styles.button} type="submit">
@@ -30,6 +37,4 @@ const AddTodo: React.FC<AddTodoProps> = ({ onAddTodo }) => {
       </button>
     </form>
   );
-};
-
-export default AddTodo;
+}

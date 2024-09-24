@@ -5,7 +5,6 @@ function App() {
   return (
     <>
       <Header />
-
       <footer>This is the footer</footer>
     </>
   );

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import styles from "./AddTodo.module.css";
+import styles from "./AddTask.module.css";
 
-interface AddTodoProps {
-  onAddTodo: (taskText: string) => void;
+interface AddTaskProps {
+  onAddTask: (taskText: string) => void;
 }
 
-export function AddTodo({ onAddTodo }: AddTodoProps) {
+export function AddTask({ onAddTask }: AddTaskProps) {
   const [taskText, setNewTask] = useState("");
 
   const handleSubmitNewTask = (e: React.FormEvent) => {
@@ -16,7 +16,7 @@ export function AddTodo({ onAddTodo }: AddTodoProps) {
     } // Prevent empty tasks from being added
 
     if (taskText.trim()) {
-      onAddTodo(taskText);
+      onAddTask(taskText);
       setNewTask("");
     }
 
@@ -30,7 +30,7 @@ export function AddTodo({ onAddTodo }: AddTodoProps) {
         type="text"
         value={taskText}
         onChange={(e) => setNewTask(e.target.value)} // Update state with the input value
-        placeholder="Add a new task"
+        placeholder="Write a new task"
       />
       <button className={styles.button} type="submit">
         Create

@@ -19,7 +19,7 @@
   align-items: center;
 }
 
-.addTodoContainer {
+.addTaskContainer {
   position: absolute;
   bottom: -3rem; /* Adjust this value to move input closer to the bottom of the header */
   width: 100%;
@@ -49,7 +49,7 @@
 }
 
 @media (min-width: 768px) {
-  .addTodoContainer {
+  .addTaskContainer {
     bottom: -1.6rem; /* Adjust this value to move input closer to the bottom of the header */
   }
 

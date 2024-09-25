@@ -29,7 +29,7 @@ To get started locally, follow these steps:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/yourusername/react-todo-app.git
+   git clone https://github.com/PeterTechDev/react-todo-list
    ```
 
 2. **Navigate to the project directory**:

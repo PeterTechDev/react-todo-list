@@ -2,7 +2,7 @@
 
 A responsive and dynamic **To-Do List** application built with **React** and **TypeScript**, designed to help users manage their daily tasks. The app supports adding, completing, and deleting tasks, with task persistence using **Local Storage** to ensure data is saved across browser sessions.
 
-## 🚀 [Live Demo](https://petertechdev.github.io/react-todo-list/)
+## 🚀 <a href="https://petertechdev.github.io/react-todo-list/" target="_blank">Live Demo</a>
 
 ## 📜 Key Features
 
@@ -74,4 +74,4 @@ To get started locally, follow these steps:
 
 ## 🔗 Connect With Me
 
-- [LinkedIn](https://linkedin.com/in/petertechdev)
+- <a href="https://linkedin.com/in/petertechdev" target="_blank">Live Demo</a>

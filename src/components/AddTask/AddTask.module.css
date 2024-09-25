@@ -16,6 +16,10 @@
   text-align: center;
 }
 
+.inputError {
+  border-color: var(--danger);
+}
+
 .input:focus {
   border-color: var(--blue);
 }
@@ -63,6 +67,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+
 @media (min-width: 640px) {
   .form {
     flex-direction: row;
@@ -75,5 +80,35 @@ button:focus-visible {
   .button {
     font-size: 1.25rem;
     width: 100px;
+  }
+}
+
+.error {
+  color: var(--danger);
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-top: 0.25rem;
+  position: absolute;
+  bottom: -1.8rem;
+  left: 1rem;
+
+  animation: shake 0.5s ease;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }

@@ -32,3 +32,16 @@
   color: var(--danger);
   cursor: pointer;
 }
+
+.deleteButton:hover {
+  color: var(--danger-dark);
+}
+
+.deleteIcon {
+  width: 1.25rem;
+  transition: transform 0.2s ease;
+}
+
+.deleteIcon:hover {
+  transform: scale(1.1);
+}

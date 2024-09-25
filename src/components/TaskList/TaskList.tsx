@@ -23,7 +23,7 @@ export function TaskList({ tasks, onToggleComplete, onDelete }: TaskListProps) {
         <div className={styles.infoBadge}>
           <span className={styles.completedText}>Done</span>
           <span className={styles.badge}>
-            {completedTasks} out {totalTasks}
+            {completedTasks} of {totalTasks}
           </span>
         </div>
       </header>

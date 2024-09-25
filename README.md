@@ -74,4 +74,4 @@ To get started locally, follow these steps:
 
 ## 🔗 Connect With Me
 
-- <a href="https://linkedin.com/in/petertechdev" target="_blank">Live Demo</a>
+- <a href="https://linkedin.com/in/petertechdev" target="_blank">Linkedin</a>

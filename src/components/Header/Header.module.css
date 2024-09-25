@@ -39,6 +39,10 @@
   font-weight: bold;
 }
 
+.title span {
+  color: var(--green);
+}
+
 /* Keyframes for the spinning animation */
 @keyframes spin {
   from {

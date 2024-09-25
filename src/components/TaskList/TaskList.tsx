@@ -16,11 +16,11 @@ export function TaskList({ tasks, onToggleComplete, onDelete }: TaskListProps) {
   return (
     <section className={styles.taskListSection}>
       <header className={styles.header}>
-        <div>
+        <div className={styles.infoBadge}>
           <span className={styles.createdText}>Total Tasks</span>
           <span className={styles.badge}>{totalTasks}</span>
         </div>
-        <div>
+        <div className={styles.infoBadge}>
           <span className={styles.completedText}>Done</span>
           <span className={styles.badge}>
             {completedTasks} out {totalTasks}

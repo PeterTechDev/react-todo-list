@@ -3,6 +3,7 @@ import { Header } from "./components/Header/Header";
 import "./global.css";
 import { Task } from "./types/task";
 import { TaskList } from "./components/TaskList/TaskList";
+import { Footer } from "./components/Footer/Footer";
 function App() {
   const [tasks, setTasks] = useState<Task[]>([]);
 
@@ -30,14 +31,12 @@ function App() {
   return (
     <>
       <Header onAddTask={addTask} />
-      <main>
-        <TaskList
-          tasks={tasks}
-          onToggleComplete={toggleCompleteTask}
-          onDelete={deleteTask}
-        />
-      </main>
-      <footer>This is the footer</footer>
+      <TaskList
+        tasks={tasks}
+        onToggleComplete={toggleCompleteTask}
+        onDelete={deleteTask}
+      />
+      <Footer />
     </>
   );
 }

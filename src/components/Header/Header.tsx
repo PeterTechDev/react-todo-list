@@ -11,7 +11,9 @@ export function Header({ onAddTask }: AddTaskProps) {
     <header className={styles.header}>
       <div className={styles.logoContainer}>
         <img className={styles.logo} src={logo} alt="React logo" />
-        <h1 className={styles.title}>React TODO List</h1>
+        <h1 className={styles.title}>
+          React To<span>do</span> List
+        </h1>
       </div>
       <div className={styles.addTaskContainer}>
         <AddTask onAddTask={onAddTask} />

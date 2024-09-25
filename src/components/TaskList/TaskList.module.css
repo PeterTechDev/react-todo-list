@@ -12,6 +12,11 @@
   margin-bottom: 1.5rem;
 }
 
+.infoBadge {
+  display: flex;
+  align-items: center;
+}
+
 .createdText {
   color: var(--blue-light);
   font-weight: bold;
@@ -51,10 +56,4 @@
   border-radius: 0.5em;
   padding: 2rem 0;
   color: var(--gray-300);
-}
-
-.taskListContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1rem;
 }

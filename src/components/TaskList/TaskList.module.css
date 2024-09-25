@@ -42,6 +42,7 @@
 .placeholder img {
   margin-bottom: 1rem;
   width: 70px;
+  opacity: 0.3;
 }
 
 .taskContainer {

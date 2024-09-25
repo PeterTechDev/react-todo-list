@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://petertechdev.github.io/react-todo-list/",
+  "homepage": "https://petertechdev.github.io/react-todo-list",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

@@ -33,7 +33,7 @@ export function AddTask({ onAddTask }: AddTaskProps) {
         placeholder="Write a new task"
       />
       <button className={styles.button} type="submit">
-        Create
+        Add
       </button>
     </form>
   );

@@ -1,0 +1,28 @@
+.taskItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  border: 1px solid var(--gray-300);
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+  background-color: var(--gray-600);
+  color: var(--gray-100);
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.taskLabel {
+  display: flex;
+  align-items: center;
+}
+
+.deleteButton {
+  background: none;
+  border: none;
+  color: var(--danger);
+  cursor: pointer;
+}

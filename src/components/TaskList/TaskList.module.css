@@ -1,0 +1,59 @@
+.taskListSection {
+  margin-top: 2rem;
+  padding: 1rem;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.createdText {
+  color: var(--blue-light);
+  font-weight: bold;
+}
+
+.completedText {
+  color: var(--green);
+  font-weight: bold;
+}
+
+.badge {
+  background-color: var(--gray-400);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-300);
+  text-align: center;
+}
+
+.placeholder img {
+  margin-bottom: 1rem;
+  width: 70px;
+}
+
+.taskContainer {
+  /* Placeholder for task list styles */
+  border-top: 1px solid var(--gray-300);
+  border-radius: 0.5em;
+  padding: 2rem 0;
+  color: var(--gray-300);
+}
+
+.taskListContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}

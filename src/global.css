@@ -12,6 +12,10 @@
   --purple: #9f7aea;
   --purple-dark: #805ad5;
 
+  /* Green */
+  --green: #48bb78;
+  --green-dark: #38a169;
+
   /* Blue */
   --blue-light: #03a6c3;
   --blue: #4299e1;
@@ -20,15 +24,28 @@
   /* Danger */
   --danger: #e53e3e;
 
+  --container-width: 736px;
+
   /* Font sizes */
   --font-size-base: 1rem; /* 16px */
   --font-size-lg: 1.25rem; /* 20px */
   --font-size-sm: 0.875rem; /* 14px */
 
   /* Font family */
-  --font-base: "Inter", sans-serif;
+  --font-base: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
 
   font-size: 16px; /* Base font size for rem units */
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: var(--gray-600);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Reset default styles */
@@ -59,8 +76,9 @@ button {
 
 /* Links */
 a {
-  text-decoration: none;
-  color: var(--blue-dark); /* Utilizando a variável de cor */
+  text-decoration: inherit;
+  color: var(--blue-dark);
+  font-weight: 500;
 }
 
 a:hover {
@@ -70,7 +88,8 @@ a:hover {
 
 body {
   font-family: var(--font-base); /* Definindo a fonte base */
-  padding-top: 5rem; /* Ajusta esse valor de acordo com a altura real do header */
+  padding-top: 12rem; /* Ajusta esse valor de acordo com a altura real do header */
   margin: 0;
   box-sizing: border-box;
+  place-items: center;
 }

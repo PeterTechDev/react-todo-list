@@ -1,12 +1,15 @@
 import { Task } from "../../types/task";
 import styles from "./TaskList.module.css";
 import noTasksIcon from "../../assets/no-data.png";
+import { TaskItem } from "../TaskItem/TaskItem";
 
 interface TaskListProps {
   tasks: Task[];
+  onToggleComplete: (id: number) => void;
+  onDelete: (id: number) => void;
 }
 
-export function TaskList({ tasks }: TaskListProps) {
+export function TaskList({ tasks, onToggleComplete, onDelete }: TaskListProps) {
   const totalTasks = tasks.length;
   const completedTasks = tasks.filter((task) => task.isCompleted).length;
 
@@ -20,7 +23,7 @@ export function TaskList({ tasks }: TaskListProps) {
         <div>
           <span className={styles.completedText}>Done</span>
           <span className={styles.badge}>
-            {completedTasks} de {totalTasks}
+            {completedTasks} out {totalTasks}
           </span>
         </div>
       </header>
@@ -34,8 +37,16 @@ export function TaskList({ tasks }: TaskListProps) {
             <span>Add a task to get started</span>
           </div>
         ) : (
-          // Here will be the task rendering logic (for future)
-          <div className={styles.taskListContainer}>Tasks go here</div>
+          <div className={styles.taskListContainer}>
+            {tasks.map((task) => (
+              <TaskItem
+                key={task.id}
+                task={task}
+                onToggleComplete={onToggleComplete}
+                onDelete={onDelete}
+              />
+            ))}
+          </div>
         )}
       </div>
     </section>

@@ -15,12 +15,25 @@ export function AddTask({ onAddTask }: AddTaskProps) {
       return;
     } // Prevent empty tasks from being added
 
+    if (taskText.length > 50) {
+      alert("Task text is too long");
+      return;
+    }
+
+    if (taskText.length < 3) {
+      alert("Task text is too short");
+      return;
+    }
+
+    if (taskText.includes("JS")) {
+      alert("Task text contains JS");
+      return;
+    }
+
     if (taskText.trim()) {
       onAddTask(taskText);
       setNewTask("");
     }
-
-    alert("New Task: " + taskText); // Placeholder for adding tasks logic
   };
 
   return (

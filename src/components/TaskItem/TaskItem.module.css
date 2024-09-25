@@ -10,7 +10,7 @@
   color: var(--gray-100);
 }
 
-.completed {
+.completed .taskText {
   text-decoration: line-through;
   opacity: 0.6;
 }
@@ -18,6 +18,10 @@
 .taskLabel {
   display: flex;
   align-items: center;
+}
+
+.taskText {
+  margin-left: 0.5rem;
 }
 
 .deleteButton {

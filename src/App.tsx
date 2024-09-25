@@ -3,7 +3,6 @@ import { Header } from "./components/Header/Header";
 import "./global.css";
 import { Task } from "./types/task";
 import { TaskList } from "./components/TaskList/TaskList";
-
 function App() {
   const [tasks, setTasks] = useState<Task[]>([]);
 
@@ -30,7 +29,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Header onAddTask={addTask} />
       <main>
         <TaskList
           tasks={tasks}

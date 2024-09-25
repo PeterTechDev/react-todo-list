@@ -20,7 +20,7 @@ export function TaskItem({ task, onToggleComplete, onDelete }: TaskItemProps) {
           checked={task.isCompleted}
           onChange={() => onToggleComplete(task.id)}
         />
-        <span>{task.text}</span>
+        <span className={styles.taskText}>{task.text}</span>
       </label>
       <button onClick={() => onDelete(task.id)} className={styles.deleteButton}>
         🗑️

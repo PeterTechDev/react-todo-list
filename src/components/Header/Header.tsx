@@ -2,11 +2,11 @@ import styles from "./Header.module.css";
 import logo from "../../assets/react.svg";
 import { AddTask } from "../AddTask/AddTask";
 
-export function Header() {
-  const handleAddTask = (taskText: string) => {
-    console.log("New Task: ", taskText); // Placeholder for adding tasks logic
-  };
+interface AddTaskProps {
+  onAddTask: (taskText: string) => void;
+}
 
+export function Header({ onAddTask }: AddTaskProps) {
   return (
     <header className={styles.header}>
       <div className={styles.logoContainer}>
@@ -14,7 +14,7 @@ export function Header() {
         <h1 className={styles.title}>React TODO List</h1>
       </div>
       <div className={styles.addTaskContainer}>
-        <AddTask onAddTask={handleAddTask} />
+        <AddTask onAddTask={onAddTask} />
       </div>
     </header>
   );

@@ -88,7 +88,8 @@ a:hover {
 
 body {
   font-family: var(--font-base); /* Definindo a fonte base */
-  padding-top: 12rem; /* Ajusta esse valor de acordo com a altura real do header */
+  padding-top: 13rem; /* Ajusta esse valor de acordo com a altura real do header */
+  padding-bottom: 4rem;
   margin: 0;
   box-sizing: border-box;
   place-items: center;
@@ -99,5 +100,4 @@ body {
   max-width: var(--container-width);
   margin: 0 auto;
   padding: 0 1rem;
-  background-color: red;
 }

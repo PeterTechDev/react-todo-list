@@ -22,6 +22,8 @@
 .addTaskContainer {
   position: absolute;
   bottom: -3rem; /* Adjust this value to move input closer to the bottom of the header */
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
   max-width: var(--container-width);
   padding: 0 1rem;

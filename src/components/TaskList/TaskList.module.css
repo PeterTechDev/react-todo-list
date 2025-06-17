@@ -1,5 +1,4 @@
 .taskListSection {
-  margin-top: 2rem;
   padding: 1rem;
   max-width: var(--container-width);
   margin: 0 auto;
@@ -56,4 +55,10 @@
   border-radius: 0.5em;
   padding: 2rem 0;
   color: var(--gray-300);
+}
+
+.taskListContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
